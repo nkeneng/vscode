@@ -8,28 +8,33 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "files.autoSave": "onFocusChange",
   "files.exclude": {
+    ".bolt": true,
+    ".next": true,
+    "**/__pycache__": true,
+    "**/.DS_Store": true,
     "**/.git": true,
+    "**/.hg": true,
+    "**/.idea": true,
     "**/.o": true,
     "**/.out": true,
     "**/.svn": true,
-    "**/.hg": true,
-    "**/.idea": true,
+    "**/.venv": true,
+    "**/.vscode": true,
     "**/CVS": true,
-    "**/.DS_Store": true,
     "**/Thumbs.db": true
   },
   "workbench.tree.indent": 15,
   "workbench.tree.renderIndentGuides": "always",
   "emmet.triggerExpansionOnTab": true,
   "git.confirmSync": false,
-  "editor.fontFamily": "'JetbrainsMono Nerd Font',Menlo, Monaco, 'Courier New', monospace",
+  // "editor.fontFamily": "'Cascadia Code Nerd Font','JetbrainsMono Nerd Font',Menlo, Monaco, 'Courier New', monospace",
   "terminal.integrated.fontFamily": "'JetbrainsMono Nerd Font',Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 17,
   "editor.fontLigatures": true,
   "editor.lineHeight": 1.7,
   "workbench.iconTheme": "material-icon-theme",
   "editor.guides.bracketPairs": true,
-  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.colorTheme": "Ayu Modern",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -94,8 +99,6 @@
     "Q_NEW_SESSION": "1"
   },
   "terminal.integrated.fontSize": 15,
-  "kotlin.languageServer.enabled": false,
-  "kotlin.debugAdapter.enabled": false,
   "window.zoomLevel": 0,
   "editor.lineNumbers": "relative",
   "vscode_custom_css.imports": [
@@ -103,552 +106,87 @@
     "file:///Users/stevennkeneng/.config/vscode/custom.js"
   ],
   "cursor.chat.showSuggestedFiles": true,
-  "workbench.activityBar.location": "hidden",
   "vim.foldfix": true,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
   "phpactor.executablePath": "/nix/store/075628hsjsd2cg26g7rsqq7c4p4n1b6s-php-with-extensions-8.3.8/bin/php",
   "makefile.configureOnOpen": true,
-  "explorer.excludeGitIgnore": false,
   "[c]": {
     "editor.defaultFormatter": "keyhr.42-c-format"
   },
-  "editor.formatOnSave": true,
-  "vscode-neovim.compositeKeys": {},
-  "vscode-neovim.logOutputToConsole": true,
   "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
-  "leadermode.keybindings": [
-    {
-      "keySequence": [
-        "e"
-      ],
-      "label": "Editor"
-    },
-    {
-      "keySequence": [
-        "e",
-        "d"
-      ],
-      "command": "workbench.action.splitEditorDown",
-      "label": "Split down"
-    },
-    {
-      "keySequence": [
-        "e",
-        "e"
-      ],
-      "label": "Show all editors",
-      "command": "workbench.action.showAllEditors"
-    },
-    {
-      "keySequence": [
-        "e",
-        "l"
-      ],
-      "command": "workbench.action.splitEditorLeft",
-      "label": "Split left"
-    },
-    {
-      "keySequence": [
-        "e",
-        "m"
-      ],
-      "command": "workbench.action.evenEditorWidths",
-      "label": "Even-out editors"
-    },
-    {
-      "keySequence": [
-        "e",
-        "M"
-      ],
-      "command": "workbench.action.maximizeEditor",
-      "label": "Maximize editor"
-    },
-    {
-      "keySequence": [
-        "e",
-        "q"
-      ],
-      "label": "Close active editor",
-      "command": "workbench.action.closeActiveEditor"
-    },
-    {
-      "keySequence": [
-        "e",
-        "r"
-      ],
-      "command": "workbench.action.splitEditor",
-      "label": "Split right"
-    },
-    {
-      "keySequence": [
-        "e",
-        "u"
-      ],
-      "command": "workbench.action.splitEditorUp",
-      "label": "Split up"
-    },
-    {
-      "keySequence": [
-        "f"
-      ],
-      "label": "File/Folder"
-    },
-    {
-      "keySequence": [
-        "f",
-        "c"
-      ],
-      "label": "Copy file path",
-      "command": "workbench.action.files.copyPathOfActiveFile"
-    },
-    {
-      "keySequence": [
-        "f",
-        "n"
-      ],
-      "label": "New file",
-      "command": "workbench.action.files.newUntitledFile"
-    },
-    {
-      "keySequence": [
-        "f",
-        "o"
-      ],
-      "label": "Open file",
-      "command": "workbench.action.files.openFile"
-    },
-    {
-      "keySequence": [
-        "f",
-        "O"
-      ],
-      "label": "Open folder",
-      "command": "workbench.action.files.openFolder"
-    },
-    {
-      "keySequence": [
-        "f",
-        "r"
-      ],
-      "label": "Reveal file in OS",
-      "command": "revealFileInOS"
-    },
-    {
-      "keySequence": [
-        "f",
-        "s"
-      ],
-      "label": "Save file",
-      "command": "workbench.action.files.save"
-    },
-    {
-      "keySequence": [
-        "f",
-        "S"
-      ],
-      "label": "Save all files",
-      "command": "workbench.action.files.saveAll"
-    },
-    {
-      "keySequence": [
-        "g"
-      ],
-      "label": "Git"
-    },
-    {
-      "keySequence": [
-        "g",
-        "b"
-      ],
-      "label": "Checkout",
-      "command": "git.checkout"
-    },
-    {
-      "keySequence": [
-        "g",
-        "c"
-      ],
-      "label": "Commit",
-      "command": "git.commit"
-    },
-    {
-      "keySequence": [
-        "g",
-        "d"
-      ],
-      "label": "Delete branch",
-      "command": "git.deleteBranch"
-    },
-    {
-      "keySequence": [
-        "g",
-        "f"
-      ],
-      "label": "Fetch",
-      "command": "git.fetch"
-    },
-    {
-      "keySequence": [
-        "g",
-        "i"
-      ],
-      "label": "Init",
-      "command": "git.init"
-    },
-    {
-      "keySequence": [
-        "g",
-        "m"
-      ],
-      "label": "Merge",
-      "command": "git.merge"
-    },
-    {
-      "keySequence": [
-        "g",
-        "p"
-      ],
-      "label": "Pull",
-      "command": "git.pull"
-    },
-    {
-      "keySequence": [
-        "g",
-        "s"
-      ],
-      "label": "Show Git View",
-      "command": "workbench.view.scm"
-    },
-    {
-      "keySequence": [
-        "g",
-        "S"
-      ],
-      "label": "Stage",
-      "command": "git.stage"
-    },
-    {
-      "keySequence": [
-        "g",
-        "U"
-      ],
-      "label": "Unstage",
-      "command": "git.unstage"
-    },
-    {
-      "keySequence": [
-        "j"
-      ],
-      "label": "Jump"
-    },
-    {
-      "keySequence": [
-        "j",
-        "d"
-      ],
-      "label": "Definition",
-      "command": "editor.action.goToDeclaration"
-    },
-    {
-      "keySequence": [
-        "j",
-        "D"
-      ],
-      "label": "Peek Definition",
-      "command": "editor.action.previewDeclaration"
-    },
-    {
-      "keySequence": [
-        "j",
-        "e"
-      ],
-      "label": "Next Error",
-      "command": "editor.action.marker.nextInFiles"
-    },
-    {
-      "keySequence": [
-        "j",
-        "i"
-      ],
-      "label": "Implementation",
-      "command": "editor.action.goToImplementation"
-    },
-    {
-      "keySequence": [
-        "j",
-        "I"
-      ],
-      "label": "Peek Implementation",
-      "command": "editor.action.peekImplementation"
-    },
-    {
-      "keySequence": [
-        "j",
-        "l"
-      ],
-      "label": "Line",
-      "command": "workbench.action.gotoLine"
-    },
-    {
-      "keySequence": [
-        "j",
-        "r"
-      ],
-      "label": "References",
-      "command": "editor.action.referenceSearch.trigger"
-    },
-    {
-      "keySequence": [
-        "j",
-        "s"
-      ],
-      "label": "Symbol in file",
-      "command": "workbench.action.gotoSymbol"
-    },
-    {
-      "keySequence": [
-        "j",
-        "S"
-      ],
-      "label": "Symbol in workspace",
-      "command": "workbench.action.showAllSymbols"
-    },
-    {
-      "keySequence": [
-        "k"
-      ],
-      "label": "Text"
-    },
-    {
-      "keySequence": [
-        "k",
-        "c"
-      ],
-      "label": "Toggle comment lines",
-      "command": "editor.action.commentLine"
-    },
-    {
-      "keySequence": [
-        "k",
-        "C"
-      ],
-      "label": "Toggle block comment",
-      "command": "editor.action.blockComment"
-    },
-    {
-      "keySequence": [
-        "k",
-        "s"
-      ],
-      "label": "Sort lines",
-      "command": "editor.action.sortLinesAscending"
-    },
-    {
-      "keySequence": [
-        "k",
-        "w"
-      ],
-      "label": "Delete whitespace",
-      "command": "editor.action.trimTrailingWhitespace"
-    },
-    {
-      "keySequence": [
-        "r"
-      ],
-      "label": "Refactor"
-    },
-    {
-      "keySequence": [
-        "r",
-        "i"
-      ],
-      "label": "Organize imports",
-      "command": "editor.action.organizeImports"
-    },
-    {
-      "keySequence": [
-        "r",
-        "r"
-      ],
-      "label": "Rename",
-      "command": "editor.action.rename"
-    },
-    {
-      "keySequence": [
-        "s"
-      ],
-      "label": "Settings"
-    },
-    {
-      "keySequence": [
-        "s",
-        "s"
-      ],
-      "label": "Settings file",
-      "command": "workbench.action.openGlobalSettings"
-    },
-    {
-      "keySequence": [
-        "s",
-        "S"
-      ],
-      "label": "Settings file",
-      "command": "workbench.action.openWorkspaceSettings"
-    },
-    {
-      "keySequence": [
-        "s",
-        "k"
-      ],
-      "label": "Keybindings",
-      "command": "workbench.action.openGlobalKeybindings"
-    },
-    {
-      "keySequence": [
-        "s",
-        "t"
-      ],
-      "label": "Theme",
-      "command": "workbench.action.selectTheme"
-    },
-    {
-      "keySequence": [
-        "t"
-      ],
-      "label": "Toggle"
-    },
-    {
-      "keySequence": [
-        "t",
-        "a"
-      ],
-      "label": "Activity bar",
-      "command": "workbench.action.toggleActivityBarVisibility"
-    },
-    {
-      "keySequence": [
-        "t",
-        "d"
-      ],
-      "label": "Developer tools",
-      "command": "workbench.action.toggleDevTools"
-    },
-    {
-      "keySequence": [
-        "t",
-        "m"
-      ],
-      "label": "Menu bar",
-      "command": "workbench.action.toggleMenuBar"
-    },
-    {
-      "keySequence": [
-        "t",
-        "n"
-      ],
-      "label": "Minimap",
-      "command": "editor.action.toggleMinimap"
-    },
-    {
-      "keySequence": [
-        "t",
-        "p"
-      ],
-      "label": "Panel",
-      "command": "workbench.action.togglePanel"
-    },
-    {
-      "keySequence": [
-        "t",
-        "s"
-      ],
-      "label": "Sidebar",
-      "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
-      "keySequence": [
-        "t",
-        "t"
-      ],
-      "label": "Tabs",
-      "command": "workbench.action.toggleTabsVisibility"
-    },
-    {
-      "keySequence": [
-        "t",
-        "u"
-      ],
-      "label": "Statusbar",
-      "command": "workbench.action.toggleStatusbarVisibility"
-    },
-    {
-      "keySequence": [
-        "t",
-        "w"
-      ],
-      "label": "Render whitespace",
-      "command": "editor.action.toggleRenderWhitespace"
-    },
-    {
-      "keySequence": [
-        "t",
-        "z"
-      ],
-      "label": "Zen mode",
-      "command": "workbench.action.toggleZenMode"
-    },
-    {
-      "keySequence": [
-        "w"
-      ],
-      "label": "Window"
-    },
-    {
-      "keySequence": [
-        "w",
-        "n"
-      ],
-      "label": "New Window",
-      "command": "workbench.action.newWindow"
-    },
-    {
-      "keySequence": [
-        "w",
-        "q"
-      ],
-      "label": "Close Window",
-      "command": "workbench.action.closeWindow"
-    },
-    {
-      "keySequence": [
-        "w",
-        "r"
-      ],
-      "label": "Reload",
-      "command": "workbench.action.reloadWindow"
-    },
-    {
-      "keySequence": [
-        "w",
-        "s"
-      ],
-      "label": "Switch Window",
-      "command": "workbench.action.quickSwitch"
-    },
-    {
-      "keySequence": [
-        "w",
-        "S"
-      ],
-      "label": "Switch Window",
-      "command": "workbench.action.switchWindow"
-    }
-  ],
-  "vscode-neovim.NVIM_APPNAME": "lazy_nvim",
   "dart.devToolsBrowser": "default",
   "dart.flutterSdkPath": "/opt/homebrew/Caskroom/flutter/3.24.2/flutter/bin/cache/flutter_web_sdk",
-  "dart.sdkPath": "/opt/homebrew/Caskroom/flutter/3.24.2/flutter/bin/cache/dart-sdk"
+  "dart.sdkPath": "/opt/homebrew/Caskroom/flutter/3.24.2/flutter/bin/cache/dart-sdk",
+  "extensions.ignoreRecommendations": true,
+  "cursor.cpp.enablePartialAccepts": true,
+  "terminal.integrated.inheritEnv": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.suggestSmartCommit": false,
+  "workbench.activityBar.location": "bottom",
+  "symfony-vscode.phpExecutablePath": "/nix/store/kbcqkx6jf4fs532bd3kmwn0r1r3ji657-php-with-extensions-8.3.12/bin/php",
+  "explorer.confirmDelete": false,
+  "python.analysis.autoImportCompletions": true,
+  "githubLocalActions.dockerDesktopPath": "/Applications/Docker.app",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "pubspec.yaml": "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+    "*.dart": "${capture}.g.dart",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "github.copilot.chat.edits.temporalContext.enabled": true,
+  "notebook.inlineValues": "on",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "intelephense.references.exclude": [],
+  "intelephense.files.exclude": [
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/CVS/**",
+    "**/.DS_Store/**",
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**/{Tests,tests}/**",
+    "**/.history/**"
+  ],
+  "php.executablePath": "/nix/store/kbcqkx6jf4fs532bd3kmwn0r1r3ji657-php-with-extensions-8.3.12/bin/php",
+  "git.openRepositoryInParentFolders": "never",
+  "jupyter.showVariableViewWhenDebugging": true,
+  "chat.agent.maxRequests": 30,
+  "docker.extension.enableComposeLanguageServer": false,
+  "database-client.autoSync": true,
+  "diffEditor.experimental.showMoves": true,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "window.customTitleBarVisibility": "windowed",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    "/var/folders/pf/k1kw5c391055wcnyb0mh253r0000gn/T/postman-collections-post-response.instructions.md": true,
+    "/var/folders/pf/k1kw5c391055wcnyb0mh253r0000gn/T/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/pf/k1kw5c391055wcnyb0mh253r0000gn/T/postman-folder-post-response.instructions.md": true,
+    "/var/folders/pf/k1kw5c391055wcnyb0mh253r0000gn/T/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/pf/k1kw5c391055wcnyb0mh253r0000gn/T/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/pf/k1kw5c391055wcnyb0mh253r0000gn/T/postman-http-request-pre-request.instructions.md": true
+  },
+  "editor.fontFamily": "'Cascadia Code',Menlo, Monaco, 'Courier New', monospace",
+  "github.copilot.nextEditSuggestions.enabled": true
 }
-

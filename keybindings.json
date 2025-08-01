@@ -77,17 +77,22 @@
         "when": "vim.mode == 'Normal' && editorTextFocus && foldersViewVisible",
         "command": "workbench.action.toggleSidebarVisibility"
     },
+    {
+        "key": "space g",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
+        "command": "workbench.view.scm"
+    },
     // End File Explorer
     {
         "key": "space s g",
         "command": "workbench.action.findInFiles",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
-    {
-        "key": "space g g",
-        "command": "lazygit.openLazygit",
-        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
-    },
+    // {
+    //     "key": "space g g",
+    //     "command": "lazygit.openLazygit",
+    //     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    // },
     // {
     //     "key": "g c",
     //     "command": "editor.action.commentLine",
@@ -95,12 +100,14 @@
     // },
     {
         "key": "ctrl+s",
-        "command": "commands.run",
+        "command": "runCommands",
         "when": "vim.mode == 'Insert' && editorTextFocus",
-        "args": [
-            "workbench.action.files.save",
-            "extension.vim_escape",
-        ]
+        "args": {
+            "commands": [
+                "workbench.action.files.save",
+                "extension.vim_escape"
+            ]
+        }
     },
     // File Explorer Actions    
     {
@@ -203,5 +210,61 @@
         "key": "s",
         "command": "-workbench.action.files.save",
         "when": "notebookEditorFocused && !inputFocus && !notebookOutputFocused"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.tasks.reRunTask",
+        "when": "taskCommandsRegistered && !terminalFocus"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
+        "key": "shift+cmd+i",
+        "command": "-extension.addPHPComment",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+l cmd+o",
+        "command": "-extension.liveServer.goOnline",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+l cmd+c",
+        "command": "-extension.liveServer.goOffline",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.panel.chat"
+    },
+    {
+        "key": "cmd+[BracketRight]",
+        "command": "-editor.unfoldAll",
+        "when": "editorFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+-",
+        "command": "-editor.fold",
+        "when": "editorFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+3",
+        "command": "-workbench.view.search",
+        "when": "workbench.view.search.active && !searchViewletVisible"
+    },
+    {
+        "key": "cmd+3",
+        "command": "-workbench.action.toggleSidebarVisibility",
+        "when": "searchViewletVisible"
+    },
+    {
+        "key": "cmd+3",
+        "command": "-workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.view.extension.github-cweijan-mysql"
     },
 ]
