@@ -27,14 +27,12 @@
   "workbench.tree.renderIndentGuides": "always",
   "emmet.triggerExpansionOnTab": true,
   "git.confirmSync": false,
-  // "editor.fontFamily": "'Cascadia Code Nerd Font','JetbrainsMono Nerd Font',Menlo, Monaco, 'Courier New', monospace",
   "terminal.integrated.fontFamily": "'JetbrainsMono Nerd Font',Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 17,
   "editor.fontLigatures": true,
   "editor.lineHeight": 1.7,
   "workbench.iconTheme": "material-icon-theme",
   "editor.guides.bracketPairs": true,
-  "workbench.colorTheme": "Ayu Modern",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -110,15 +108,8 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "phpactor.executablePath": "/nix/store/075628hsjsd2cg26g7rsqq7c4p4n1b6s-php-with-extensions-8.3.8/bin/php",
   "makefile.configureOnOpen": true,
-  "[c]": {
-    "editor.defaultFormatter": "keyhr.42-c-format"
-  },
-  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
-  "dart.devToolsBrowser": "default",
-  "dart.flutterSdkPath": "/opt/homebrew/Caskroom/flutter/3.24.2/flutter/bin/cache/flutter_web_sdk",
-  "dart.sdkPath": "/opt/homebrew/Caskroom/flutter/3.24.2/flutter/bin/cache/dart-sdk",
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
   "extensions.ignoreRecommendations": true,
   "cursor.cpp.enablePartialAccepts": true,
   "terminal.integrated.inheritEnv": false,
@@ -127,10 +118,8 @@
   },
   "git.suggestSmartCommit": false,
   "workbench.activityBar.location": "bottom",
-  "symfony-vscode.phpExecutablePath": "/nix/store/kbcqkx6jf4fs532bd3kmwn0r1r3ji657-php-with-extensions-8.3.12/bin/php",
   "explorer.confirmDelete": false,
   "python.analysis.autoImportCompletions": true,
-  "githubLocalActions.dockerDesktopPath": "/Applications/Docker.app",
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -167,7 +156,6 @@
     "**/vendor/**/{Tests,tests}/**",
     "**/.history/**"
   ],
-  "php.executablePath": "/nix/store/kbcqkx6jf4fs532bd3kmwn0r1r3ji657-php-with-extensions-8.3.12/bin/php",
   "git.openRepositoryInParentFolders": "never",
   "jupyter.showVariableViewWhenDebugging": true,
   "chat.agent.maxRequests": 30,
@@ -179,14 +167,20 @@
   "window.customTitleBarVisibility": "windowed",
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "chat.instructionsFilesLocations": {
-    ".github/instructions": true,
-    "/var/folders/pf/k1kw5c391055wcnyb0mh253r0000gn/T/postman-collections-post-response.instructions.md": true,
-    "/var/folders/pf/k1kw5c391055wcnyb0mh253r0000gn/T/postman-collections-pre-request.instructions.md": true,
-    "/var/folders/pf/k1kw5c391055wcnyb0mh253r0000gn/T/postman-folder-post-response.instructions.md": true,
-    "/var/folders/pf/k1kw5c391055wcnyb0mh253r0000gn/T/postman-folder-pre-request.instructions.md": true,
-    "/var/folders/pf/k1kw5c391055wcnyb0mh253r0000gn/T/postman-http-request-post-response.instructions.md": true,
-    "/var/folders/pf/k1kw5c391055wcnyb0mh253r0000gn/T/postman-http-request-pre-request.instructions.md": true
+    ".github/instructions": true
   },
   "editor.fontFamily": "'Cascadia Code',Menlo, Monaco, 'Courier New', monospace",
-  "github.copilot.nextEditSuggestions.enabled": true
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.tools.terminal.autoApprove": {
+    "/^git --no-pager diff$/": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "git checkout": true
+  },
+  "workbench.colorTheme": "GitHub Dark Default",
+  "chat.mcp.gallery.enabled": true,
+  "nix.enableLanguageServer": true,
+  "nix.serverPath": "nil",
+  "githubLocalActions.dockerDesktopPath": "/Applications/Docker.app"
 }
